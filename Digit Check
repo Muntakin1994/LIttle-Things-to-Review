@@ -1,0 +1,11 @@
+int digit_check()
+{
+    int num;
+    char c;
+    while(scanf("%d%c", &num, &c) != 2 || c != '\n')
+    {
+        printf("Enter Digit Only: ");
+        fflush(stdin);
+    }
+    return num;
+}
