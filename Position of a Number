@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+   int x, n, i, r;
+   printf("Enter a Number\n");
+   scanf("%d", &x);
+   printf("Enter a Position\n");
+   scanf("%d", &n);
+   for(i = 0; i< n; i++){
+    r=x%10;
+    x=x/10;
+   }
+   printf("%d", r);
+
+}
+
+
