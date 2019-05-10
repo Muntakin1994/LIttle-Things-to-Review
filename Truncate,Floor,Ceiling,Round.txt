@@ -1,0 +1,25 @@
+Truncate: this conversion simply removes any fractional part from the number. A number like 1.65 truncates to 1.0; -1.65 truncates to -1.0.
+This is the default if keyword is omitted.
+
+Floor: this conversion chooses the largest (closest to positive infinity) integer that is not greater than the original number. 
+The floor of 1.65 is 1.0; the floor of -1.65 is -2.0
+
+Ceiling: This conversion chooses the smallest (closest to negative infinity) integer that is not smaller than the original number.
+The ceiling of 1.65 is 2.0; the ceiling of -1.65 is -1.0.
+
+Round: This conversion chooses the integer closest to the original number. If two possible integers are equally close, 
+the one that is even is chosen. This has the effect of a 50 percent chance of rounding down and a 50 percent chance of rounding up. 
+Note that this is different from the rounding policy of the ROUND command.
+
+
+
+
+
+
+              input           Trunc           Floor           Ceil          Round         
+               5.5             5               5               6             6             
+               6.5             6               6               7             6             
+              -1.5            -1              -2              -1            -2            
+               1.5             1               1               2             2             
+               1.9             1               1               2             2             
+              -1.9            -1              -2              -1            -2  
