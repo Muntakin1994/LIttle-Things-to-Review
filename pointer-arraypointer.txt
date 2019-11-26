@@ -1,0 +1,9 @@
+suppose that a is a onedimensional array and p is a pointer variable. assuming that the assignment  p=a has just been performed,
+which of the following expression are illegal because of mismatched types? of the remaining expression, which are true(non zero)?
+
+a) p==a[0]
+b) p == &a[0]
+c) *p == a[0]
+d) p[0] == a[0]
+
+Source: K.N king C programming Moder Approache 
