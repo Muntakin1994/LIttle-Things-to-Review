@@ -1,0 +1,31 @@
+int const*
+
+
+
+int const* is pointer to constant integer
+This means that the variable being declared is a pointer, pointing to a constant integer. Effectively,
+this implies that the pointer is pointing to a value that shouldn’t be changed.
+Const qualifier doesn’t affect the pointer in this scenario so the pointer is allowed to point to some other address.
+The first const keyword can go either side of data type, hence int const* is equivalent to const int*.
+
+
+
+int *const
+
+
+
+int *const is a constant pointer to integer
+This means that the variable being declared is a constant pointer pointing to an integer. 
+Effectively, this implies that the pointer shouldn’t point to some other address. 
+Const qualifier doesn’t affect the value of integer in this scenario so the value being stored in the address is allowed to change.
+
+
+
+const int* const
+
+
+const int* const is a constant pointer to constant integer
+This means that the variable being declared is a constant pointer pointing to a constant integer.
+Effectively, this implies that a constant pointer is pointing to a constant value. 
+Hence, neither the pointer should point to a new address nor the value being pointed to should be changed.
+The first const keyword can go either side of data type, hence const int* const is equivalent to int const* const.
