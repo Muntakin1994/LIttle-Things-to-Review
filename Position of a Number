@@ -5,12 +5,18 @@ main()
 	int x, n, i, r,s;
 	printf("Enter a Number\n");
 	scanf("%d", &x);
+	//entered 456
 	printf("Enter a Position\n");
 	scanf("%d", &n);
+	//entered 2
 	r = pow(10, n);
+	//r is now 10 square that means 100
 	s = x % r;
+	//s is now 456%100=56
 	r = r / 10;
+	//r is now 100/10=10
 	s = s / r;
+	//s is now 56/10=5
 	printf("%d\n", s);
 	system("pause");
 }
