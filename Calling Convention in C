@@ -1,0 +1,18 @@
+Calling convention indicates the order in which arguments are
+passed to a function when a function call is encountered. There are
+two possibilities here:
+(a)
+(b)
+Arguments might be passed from left to right.
+Arguments might be passed from right to left.
+C language follows the second order.
+Consider the following function call:
+fun (a, b, c, d ) ;
+In this call it doesn’t matter whether the arguments are passed
+from left to right or from right to left. However, in some function
+call the order of passing arguments becomes an important
+consideration. For example:
+int a = 1 ;
+printf ( "%d %d %d", a, ++a, a++ ) ;
+It appears that this printf( ) would output 1 2 3.
+This however is not the case. Surprisingly, it outputs 3 3 1.
